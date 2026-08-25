@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Vibe: Global Korean Culture Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black text-indigo-600 tracking-wider">K-VIBE</div>
+            <div class="flex items-center space-x-4">
+                <span class="text-sm bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-medium">🌐 Auto-Translate ON</span>
+                <button class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition">New Post</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Sidebar Categories -->
+        <aside class="space-y-6">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <h3 class="font-bold text-gray-400 text-xs uppercase tracking-wider mb-3">Categories</h3>
+                <ul class="space-y-2 font-medium text-sm">
+                    <li><a href="#" class="flex items-center space-x-2 p-2 rounded-lg bg-indigo-50 text-indigo-600 font-semibold">🔥 <span>Trending Topics</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-50 text-gray-600">🖼️ <span>Global Gallery (갤러리)</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-50 text-gray-600">💬 <span>Free Talk (자유게시판)</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-50 text-gray-600">💖 <span>Love & Dating (연애/고민)</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-50 text-gray-600">🍳 <span>K-Food & Recipes (요리)</span></a></li>
+                    <li><a href="#" class="flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-50 text-gray-600">🎤 <span>K-Pop & Drama</span></a></li>
+                </ul>
+            </div>
+
+            <!-- Country Filter Box -->
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <h3 class="font-bold text-gray-400 text-xs uppercase tracking-wider mb-3">Filter by Country</h3>
+                <div class="flex flex-wrap gap-2">
+                    <button class="bg-indigo-600 text-white text-xs px-3 py-1.5 rounded-full font-medium">All Global</button>
+                    <button class="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full font-medium hover:bg-gray-200">🇺🇸 USA</button>
+                    <button class="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full font-medium hover:bg-gray-200">🇯🇵 Japan</button>
+                    <button class="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full font-medium hover:bg-gray-200">🇧🇷 Brazil</button>
+                    <button class="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-full font-medium hover:bg-gray-200">🇬🇧 UK</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Feed & Gallery -->
+        <main class="md:col-span-3 space-y-8">
+            
+            <!-- 🌟 New Section: Global Photo Gallery -->
+            <section class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold">📸 Global Fan Photo Gallery</h2>
+                    <a href="#" class="text-xs text-indigo-600 font-semibold hover:underline">View All +</a>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <!-- Gallery Item 1 -->
+                    <div class="group relative rounded-lg overflow-hidden bg-gray-100 aspect-square">
+                        <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=500&q=80" alt="K-Food" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-3 text-white">
+                            <div class="flex items-center space-x-1.5 text-xs mb-1">
+                                <span>🇺🇸</span>
+                                <span class="font-medium">Anonymous_US</span>
+                            </div>
+                            <p class="text-xs font-semibold truncate">Homemade Tteokbokki! 🔥</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="group relative rounded-lg overflow-hidden bg-gray-100 aspect-square">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=500&q=80" alt="K-Pop Concert" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-3 text-white">
+                            <div class="flex items-center space-x-1.5 text-xs mb-1">
+                                <span>🇯🇵</span>
+                                <span class="font-medium">Anonymous_JP</span>
+                            </div>
+                            <p class="text-xs font-semibold truncate">At the Seoul Live Concert! 🎤</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="group relative rounded-lg overflow-hidden bg-gray-100 aspect-square">
+                        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=500&q=80" alt="Korea Travel" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex flex-col justify-end p-3 text-white">
+                            <div class="flex items-center space-x-1.5 text-xs mb-1">
+                                <span>🇧🇷</span>
+                                <span class="font-medium">Anonymous_BR</span>
+                            </div>
+                            <p class="text-xs font-semibold truncate">Hanok Village trip 🏮</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Header: Popular Posts -->
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-bold">🌟 Popular Posts by Country</h2>
+                <select class="text-sm bg-white border border-gray-200 rounded-lg px-3 py-1.5 outline-none">
+                    <option>Today</option>
+                    <option>This Week</option>
+                    <option>All Time</option>
+                </select>
+            </div>
+
+            <!-- Feed List -->
+            <div class="space-y-4">
+                
+                <!-- Post 1: K-Food -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xl">🇺🇸</span>
+                            <span class="font-bold text-gray-700 text-sm">Anonymous_US</span>
+                            <span class="text-xs bg-orange-50 text-orange-600 px-2 py-0.5 rounded font-medium">K-Food</span>
+                        </div>
+                        <span class="text-xs text-gray-400">10 mins ago</span>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">I tried making Kimchi Fried Rice with cheese for the first time!</h3>
+                    <p class="text-gray-600 text-sm mb-4">It was a bit too spicy for me, but adding mozzarella cheese made it absolute perfection. Any other easy recipes I should try?</p>
+                    
+                    <div class="mb-4">
+                        <button class="text-xs text-indigo-600 bg-indigo-50 hover:bg-indigo-100 px-3 py-1 rounded-md font-medium transition">✨ Translate to Korean / 원문 보기</button>
+                    </div>
+
+                    <div class="flex space-x-6 text-xs text-gray-500 pt-3 border-t border-gray-50">
+                        <button class="hover:text-indigo-600 flex items-center space-x-1"><span>❤️</span> <span>52 Likes</span></button>
+                        <button class="hover:text-indigo-600 flex items-center space-x-1"><span>💬</span> <span>14 Comments</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
